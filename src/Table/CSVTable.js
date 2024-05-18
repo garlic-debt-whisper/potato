@@ -119,6 +119,11 @@ const CSVTable = () => {
 
     const [sortedData, handleSorting] = useSortableTable(data, columns, checkedCategories, categories);
 
+    // Utility to compute class for sorting
+    const getSortClass = (accessor) => {
+        return sortField === accessor ? (order === "asc" ? "up" : "down") : "default";
+    };
+
 
     return (
         <div className="table-container">
@@ -155,12 +160,12 @@ const CSVTable = () => {
                         <thead>
                             <tr>
                                 <th 
-                                className="sticky-col" 
-                                onClick={() => handleSortingChange("model")}>
+                                    className={`sticky-col ${getSortClass("model")}`}
+                                    onClick={() => handleSortingChange("model")}>
                                     Model</th>
-                                <th 
-                                className="sticky-col globalAverage-col" 
-                                onClick={() => handleSortingChange("ga")}>
+                                <th
+                                    className={`sticky-col globalAverage-col ${getSortClass("ga")}`}
+                                    onClick={() => handleSortingChange("ga")}>
                                     Global Average</th>
                                 {Object.entries(checkedCategories).flatMap(([category, checks]) =>
                                     checks.average ? [`${category} Average`] :
@@ -168,7 +173,9 @@ const CSVTable = () => {
                                 ).map((header, index) => (
                                     <th 
                                     key={index} 
-                                    onClick={() => handleSortingChange(header)}>{header}</th>
+                                    onClick={() => handleSortingChange(header)}
+                                    className={getSortClass(header)}>
+                                        {header}</th>
                                 ))}
                             </tr>
                         </thead>
