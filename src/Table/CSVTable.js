@@ -43,7 +43,7 @@ const CSVTable = () => {
         { label: "Data Science", accessor: "average_data_science", sortable: true, visible: true }
     ], []);
     useEffect(() => {
-        fetch('/table.csv')
+        fetch('./table.csv')
             .then(response => response.text())
             .then(text => {
                 Papa.parse(text, {
@@ -56,7 +56,7 @@ const CSVTable = () => {
                 });
             });
 
-        fetch('/categories.json')
+        fetch('./categories.json')
             .then(response => response.json())
             .then(json => {
                 console.log("Categories:", json); // This will show you the actual structure.

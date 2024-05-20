@@ -12,7 +12,7 @@ const bibtexEntry = `
 }`;
 
 const abstract = `Test set contamination, wherein test data from a benchmark ends up in a newer model’s training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete.  As a consequence, LLM judging and benchmarks that crowdsource evaluations from their userbase and let human users judge the models’ responses are becoming popular.  While LLM judging and crowdsourced benchmarks have many benefits, LLM judges introduce significant bias, and crowdsourced benchmarks are uncontrolled since users have the freedom to ask whatever questions they want and judge model responses under their own subjective criteria.  In this work, we introduce LiveBench, designed to be immune to both test set contamination and the biases of LLM judging and crowdsourcing.  
-LiveBench is the first benchmark that(1) contains frequently - updated questions from new information sources, and \emph{questions become harder over time }, (2) scores answers automatically according to the objective ground - truth, and(3) contains a wide variety of challenging questions, including math, coding, reasoning, and data science.LiveBench contains questions that are based on recently - released math competitions, arxiv papers, and datasets, and it contains harder, "un-gameable" versions of two previously released benchmarks: Big-Bench Hard and AMPS. 
+LiveBench is the first benchmark that(1) contains frequently - updated questions from new information sources, and \\emph{questions become harder over time }, (2) scores answers automatically according to the objective ground - truth, and(3) contains a wide variety of challenging questions, including math, coding, reasoning, and data science.LiveBench contains questions that are based on recently - released math competitions, arxiv papers, and datasets, and it contains harder, "un-gameable" versions of two previously released benchmarks: Big-Bench Hard and AMPS. 
 We evaluate several closed-source models, as well as dozens of open-source models ranging from 7B to 70B in size. 
 We release all questions, code, and model answers, and we welcome community engagement and collaboration for expanding the benchmark tasks and models.
 Among many insights, we find that for the first time, GPT-4 is able to achieve a high enough score on the American Mathematics Competition (AMC12B 2023) to qualify for the American Invitational Mathematics Competition (AIME).`
@@ -80,7 +80,7 @@ function App() {
                                 <div class="column has-text-centered">
                                     <div class="publication-links">
                                         <span class="link-block">
-                                            <a href=""
+                                            <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
                                                     <i class="ai ai-arxiv"></i>
@@ -89,7 +89,7 @@ function App() {
                                             </a>
                                         </span>
                                         <span class="link-block">
-                                            <a href=""
+                                            <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
                                                     <i class="fab fa-github"></i>
@@ -98,7 +98,7 @@ function App() {
                                             </a>
                                         </span>
                                         <span class="link-block">
-                                            <a href=""
+                                            <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
                                                     <i class="far fa-images"></i>
