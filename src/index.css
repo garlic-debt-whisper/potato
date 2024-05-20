@@ -78,3 +78,7 @@ th.down {
 .table tbody tr:nth-child(2n) td {
   background: #fff;
 }
+
+.bibtex {
+  text-align: left;
+}

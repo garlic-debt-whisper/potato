@@ -127,7 +127,6 @@ const CSVTable = () => {
 
     return (
         <div className="table-container">
-            <h1>CSV Data Table</h1>
             <div className="category-checkboxes">
                 {Object.keys(categories).map((category, idx) => (
                     <div key={idx} className="category-group">
@@ -188,7 +187,7 @@ const CSVTable = () => {
                                         checks.average ? [calculateAverage(row, categories[category])] :
                                             checks.allSubcategories ? categories[category].map(subCat =>
                                                 row[subCat] == null ? '-' :
-                                                    parseInt(row[subCat]) == row[subCat] ? row[subCat] : row[subCat].toFixed(2)) : []
+                                                    parseInt(row[subCat]) === row[subCat] ? row[subCat] : row[subCat].toFixed(2)) : []
                                     ).map((cell, idx) => <td key={idx}>{cell}</td>)}
                                 </tr>
                             ))}
