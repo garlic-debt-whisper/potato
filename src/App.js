@@ -4,18 +4,14 @@ import CSVTable from './Table/CSVTable';
 import 'bulma/css/bulma.css'
 
 const bibtexEntry = `
-@article{park2021nerfies,
+@article{livebench,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
 }`;
 
-const abstract = `Test set contamination, wherein test data from a benchmark ends up in a newer model’s training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete.  As a consequence, LLM judging and benchmarks that crowdsource evaluations from their userbase and let human users judge the models’ responses are becoming popular.  While LLM judging and crowdsourced benchmarks have many benefits, LLM judges introduce significant bias, and crowdsourced benchmarks are uncontrolled since users have the freedom to ask whatever questions they want and judge model responses under their own subjective criteria.  In this work, we introduce LiveBench, designed to be immune to both test set contamination and the biases of LLM judging and crowdsourcing.  
-LiveBench is the first benchmark that(1) contains frequently - updated questions from new information sources, and \\emph{questions become harder over time }, (2) scores answers automatically according to the objective ground - truth, and(3) contains a wide variety of challenging questions, including math, coding, reasoning, and data science.LiveBench contains questions that are based on recently - released math competitions, arxiv papers, and datasets, and it contains harder, "un-gameable" versions of two previously released benchmarks: Big-Bench Hard and AMPS. 
-We evaluate several closed-source models, as well as dozens of open-source models ranging from 7B to 70B in size. 
-We release all questions, code, and model answers, and we welcome community engagement and collaboration for expanding the benchmark tasks and models.
-Among many insights, we find that for the first time, GPT-4 is able to achieve a high enough score on the American Mathematics Competition (AMC12B 2023) to qualify for the American Invitational Mathematics Competition (AIME).`
+const abstract = `Test set contamination, wherein test data from a benchmark ends up in a newer model’s training set, is a well-documented obstacle for fair LLM evaluation and can quickly render benchmarks obsolete. As a consequence, LLM judging and benchmarks that crowdsource evaluations from their userbase and let human users judge the models’ responses are becoming popular. While LLM judging and crowdsourced benchmarks have many benefits, LLM judges introduce significant bias, and crowdsourced benchmarks are uncontrolled since users have the freedom to ask whatever questions they want and judge model responses under their own subjective criteria. `
 
 function App() {
     return (
@@ -25,34 +21,37 @@ function App() {
                     <div class="container is-max-desktop">
                         <div class="columns is-centered">
                             <div class="column has-text-centered">
-                                <h1 class="title is-1 publication-title">LiveBench: This is a Subheader for the Project</h1>
+                                <h1 class="title is-1 publication-title">LiveBench: A Framework for Future-Proof LLM Benchmarks</h1>
                                 <div class="is-size-5 publication-authors">
                                     <span class="author-block">
-                                        <a href="https://crwhite.ml">Colin White*</a><sup>1</sup>,
+                                        <a href="https://crwhite.ml" target="_blank" rel="noreferrer">Colin White*</a><sup>1</sup>,
                                         </span>
                                     <span class="author-block">
-                                        <a href="http://spamueldooley.com">Samuel Dooley*</a><sup>1</sup>,
+                                        <a href="http://spamueldooley.com" target="_blank" rel="noreferrer">Samuel Dooley*</a><sup>1</sup>,
                                         </span>
                                     <br></br>
                                     <span class="author-block">
-                                        <a href="https://willieneis.github.io">Willie Neiswanger</a><sup>2</sup>,
+                                        <a href="https://willieneis.github.io" target="_blank" rel="noreferrer">Willie Neiswanger</a><sup>2</sup>,
                                     </span>
                                     <span class="author-block">
-                                        Sid<sup>4</sup>,
+                                        <a href="https://tmfs10.github.io/" target="_blank" rel="noreferrer">Siddhartha Jain</a><sup>4</sup>,
                                     </span>
                                     <span class="author-block">
-                                        <a href="https://www.ravid-shwartz-ziv.com">Ravid Shwartz-Ziv</a><sup>3</sup>,
+                                        <a href="https://www.ravid-shwartz-ziv.com" target="_blank" rel="noreferrer">Ravid Shwartz-Ziv</a><sup>3</sup>,
                                     </span>
                                     <span class="author-block">
-                                        Manley Roberts<sup>1</sup>,
+                                        <a href="" target="_blank" rel="noreferrer">Manley Roberts</a><sup>1</sup>,
                                     </span>
                                     <span class="author-block">
-                                        Ben Feuer<sup>3</sup>,
+                                        <a href="" target="_blank" rel="noreferrer">Ben Feuer</a><sup>3</sup>,
                                     </span>
                                     <span class="author-block">
-                                        Arka Pal<sup>1</sup>,
+                                        <a href="" target="_blank" rel="noreferrer">Arka Pal</a><sup>1</sup>,
                                     </span>
                                     <br></br>
+                                    <span class="author-block">
+                                        <a href="" target="_blank" rel="noreferrer">Siddartha Naidu</a><sup>3</sup>,
+                                    </span>
                                     <span class="author-block">
                                         <a href="https://chinmayhegde.github.io">Chinmay Hegde</a><sup>3</sup>,
                                     </span>
@@ -85,7 +84,7 @@ function App() {
                                                 <span class="icon">
                                                     <i class="ai ai-arxiv"></i>
                                                 </span>
-                                                <span>Paper</span>
+                                                <span>Blog</span>
                                             </a>
                                         </span>
                                         <span class="link-block">
@@ -117,8 +116,7 @@ function App() {
                 <div class="container is-max-desktop">
                     <div class="hero-body">
                         <h2 class="subtitle has-text-centered">
-                            <span class="dnerf">LiveBench</span> is an iterative language model benchmark with 
-                            data updates every month to address contamination.
+                            <span class="dnerf">LiveBench</span> is an open-source, continuously updated benchmark with questions based on new data.
                         </h2>
                     </div>
                 </div>
@@ -127,7 +125,7 @@ function App() {
                 <div class="container is-max-desktop">
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
-                            <h2 class="title is-3">Abstract</h2>
+                            <h2 class="title is-3">Introduction</h2>
                             <div class="content has-text-justified">
                                 {abstract}
                             </div>
