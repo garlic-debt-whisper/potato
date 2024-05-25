@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import './Blog.css';
 import CSVTable from './Table/CSVTable';
 import 'bulma/css/bulma.css'
 import { bibtexEntry, abstract, tagline } from './constants';
 
-function App() {
+
+function Blog() {
     return (
-        <div className="App">
+        <div className="Blog">
             <section class="hero">
                 <div class="hero-body">
                     <div class="container is-max-desktop">
@@ -116,6 +117,9 @@ function App() {
                         <h2 class="subtitle has-text-centered">
                             {tagline}
                         </h2>
+                        <div className="has-text-centered">
+                            <img src="livebench_radar.png" alt="Radial Plot Visualization" style={{ maxWidth: '100%', height: 'auto' }} />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -126,20 +130,54 @@ function App() {
                             <h2 class="title is-3">Introduction</h2>
                             <div class="content has-text-justified">
                                 {abstract}
+                                <br/><br/>
+                                We introduce LiveBench, an open-source benchmark designed to be immune to both test set contamination and the pitfalls of LLM judging and crowdsourcing. LiveBench is the first benchmark with the following properties. 
+                                <ul>
+                                    <li>
+                                        Contains frequently-updated questions from new information sources, and <strong>questions become harder over time</strong>.
+                                    </li>
+                                    <li>
+                                        Scores answers automatically according to the objective ground-truth, without the use of LLM judges.
+                                    </li>
+                                    <li>
+                                        Contains a wide variety of challenging questions, including math, coding, reasoning, and data analysis. 
+                                    </li>
+                                </ul>
+                                LiveBench contains questions that are based on recently-released math competitions, arxiv papers, and datasets, and it contains harder, `un-gameable' versions of tasks from two previously released benchmarks: Big-Bench Hard and AMPS. We evaluate several closed-source models, as well as dozens of open-source models ranging from 7B to 70B in size. LiveBench is **hard**, with GPT-4-Turbo achieving 45% accuracy.
+                                We release all questions, code, and model answers, and we welcome community engagement and collaboration for expanding the benchmark tasks and models. <strong>Questions will be added and updated on a monthly basis, and we welcome community contributions.</strong>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="columns is-centered">
-                    <div class="column is-four-fifths">
-                        <h2 class="title is-3">Leaderboard</h2>
-                            <CSVTable />
+            <section className="section">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Benchmark Overview</h2>
+                            <div class="content has-text-justified">
+                                <ul>
+                                    <li>
+                                        Coding: generation, completion, and selection questions from recent sites such as Codeforces.
+                                    </li>
+                                    <li>
+                                        Math: recent math competitions, as well as a harder, new version of AMPS dataset.
+                                    </li>
+                                    <li>
+                                        Reasoning: harder, new versions of tasks from Big-Bench Hard and bAbi, as well as zebra puzzles.
+                                    </li>
+                                    <li>
+                                        Data Analysis: questions using recent datasets on Kaggle: table reformatting, predicting which columns can join two tables, and column type annotation
+                                    </li>
+                                    <li>
+                                        Writing: fixing typos, and answering questions, from recent arxiv papers.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section class="section" id="BibTeX">
                 <div class="container is-max-desktop content">
                     <h2 class="title">BibTeX</h2>
@@ -163,7 +201,7 @@ function App() {
                     <div class="column is-8">
                         <div class="content">
                             <p>
-
+                                Lorem Ipsum
                             </p>
                             <p>
                                 This website is licensed under a <a rel="license"
@@ -182,4 +220,4 @@ function App() {
 }
 
 
-export default App;
+export default Blog;
