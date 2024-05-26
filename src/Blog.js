@@ -178,6 +178,43 @@ function Blog() {
                     </div>
                 </div>
             </section>
+            <section className="section">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Motivation</h2>
+                            <div class="content has-text-justified">
+                                Most modern LLMs include large swaths of the internet in their training data; if the LLM has seen the questions of a benchmark during training, its performance on that benchmark will be artificially inflated. For example, recent work shows that LLMs' performance on Codeforces plummets after the training data cutoff date of the LLM, and before the cutoff date, performance is highly correlated with the number of times the problem appears on GitHub. Similarly, a recent hand-crafted variant of the established math dataset, GSM8K, shows evidence that several models have overfitted to this benchmark.
+                                <br></br><br></br>
+
+                                <strong>LLM-as-a-judge. </strong>
+                                LLM judging is fast and relatively cheap. Furthermore, its biggest strength is its ability to judge open-ended questions, instruction-following questions, and chat bots.
+                                On the other hand, LLM judging also comes with the following weaknesses.
+                                LLMs have biases towards their own answers. 
+                                Typically only GPT-4 and Claude-3-Opus are used as judges, as the highest-performing LLMs. 
+                                Yet, GPT-4 and Claude-3-Opus both favor their own answers. 
+                                They also have a noticeable difference in terms of variance and favorability of other models, and GPT-4 has variance in its own judging, even with temperature 0. 
+                                Additionally, LLMs make errors. For example, question 2 in Arena-Hard asks to write a C++ program to compute whether a given string can be converted to `abc' by swapping two letters.
+                                GPT-4 incorrectly judges gpt-4-0314's solution as incorrect.
+                                <br></br><br></br>
+
+                                <strong>Human-as-a-judge. </strong>
+                                In some sense, human evaluation could be considered the gold standard for judging LLMs, because humans are the ones interfacing with LLMs in many applications.
+                                However, human judging is still often not the best choice.
+                                First, human-judging is quite labor-intensive, especially for certain types of questions such as complex math integrals, coding problems, or long-context reasoning problems. 
+                                For these types of questions, it is common for humans to make mistakes, and it would be much simpler to have the answers upfront.
+                                There can also be high variability from human to human. And finally, humans have biases such as the length of the output, the formatting, and the tone and formality.
+                                <br></br><br></br>
+
+                                <strong>Objective ground-truth judging. </strong>
+                                Comparing the output of the LLM to a predetermined ground-truth answer (using exact-string matching and other techniques) comes with a number of strengths: it is trivial to score the outputs in terms of time and cost. Furthermore, it avoids the above weaknesses on having biases, errors, and variability in judging.
+                                On the other hand, a weakness is that some types of questions do not have ground-truth answers, such as "write a travel guide to Hawaii."
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section" id="BibTeX">
                 <div class="container is-max-desktop content">
                     <h2 class="title">BibTeX</h2>
