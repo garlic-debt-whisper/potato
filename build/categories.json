@@ -1,7 +1,13 @@
 {
-    "Data Science": [
-        "DataBench_CTA",
-        "DataBench_JoinMap"
+    "Reasoning": [
+        "house_traversal",
+        "web_of_lies_v2",
+        "zebra_puzzle"
+    ],
+    "Coding": [
+        "livecodebench_lite_generation",
+        "livecodebench_plus_completion",
+        "livecodebench_plus_selection"
     ],
     "Mathematics": [
         "aime_i_2024",
@@ -18,12 +24,11 @@
         "math_integral",
         "math_std",
         "math_variance",
-        "paper_questions",
         "smc"
     ],
-    "Reasoning": [
-        "house_traversal",
-        "web_of_lies_v2",
-        "zebra_puzzle"
+    "Data Analysis": [
+        "DataBench_CTA",
+        "DataBench_JoinMap",
+        "DataBench_TableReformat"
     ]
 }
