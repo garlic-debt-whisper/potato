@@ -26,8 +26,8 @@ const CSVTable = () => {
         { label: "AMC A", accessor: "amc_12a_2023", sortable: true, visible: false },
         { label: "House Traversal", accessor: "house_traversal", sortable: true, visible: false },
         { label: "Characteristic Polynomial", accessor: "math_characteristic_polynomial", sortable: true, visible: false },
-        { label: "math_complete_square", accessor: "math_complete_square", sortable: true, visible: false },
-        { label: "math_derivatives", accessor: "math_derivatives", sortable: true, visible: false },
+        { label: "Complete Square", accessor: "math_complete_square", sortable: true, visible: false },
+        { label: "Derivatives", accessor: "math_derivatives", sortable: true, visible: false },
         { label: "math_determinant", accessor: "math_determinant", sortable: true, visible: false },
         { label: "math_factor_polynomials", accessor: "math_factor_polynomials", sortable: true, visible: false },
         { label: "math_gcd", accessor: "math_gcd", sortable: true, visible: false },
@@ -40,7 +40,7 @@ const CSVTable = () => {
         { label: "zebra_puzzle", accessor: "zebra_puzzle", sortable: true, visible: false },
         { label: "Reasoning", accessor: "average_reasoning", sortable: true, visible: true },
         { label: "Mathematics", accessor: "average_mathematics", sortable: true, visible: true },
-        { label: "Data Science", accessor: "average_data_science", sortable: true, visible: true }
+        { label: "Data Analysis", accessor: "average_data_science", sortable: true, visible: true }
     ], []);
     useEffect(() => {
         fetch('./table.csv')
@@ -124,6 +124,10 @@ const CSVTable = () => {
         return sortField === accessor ? (order === "asc" ? "up" : "down") : "default";
     };
 
+    const findColumnLabel = (accessor) => {
+        const column = columns.find(col => col.accessor === accessor);
+        return column ? column.label : accessor;
+      };
 
     return (
         <div className="table-container">
@@ -137,6 +141,7 @@ const CSVTable = () => {
                                     checked={checkedCategories[category]?.average}
                                     onChange={() => handleCheckboxChange(category, 'average')}
                                 />
+
                                 {category} Average
                             </label>
                         </div>
