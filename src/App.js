@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import CSVTable from './Table/CSVTable';
 import 'bulma/css/bulma.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 import { bibtexEntry, abstract, tagline } from './constants';
 
 function App() {
@@ -22,13 +23,13 @@ function App() {
                                         </span>
                                     <br></br>
                                     <span class="author-block">
-                                        <a href="" target="_blank" rel="noreferrer">Manley Roberts</a><sup>1</sup>,
+                                        <a href="." target="_blank" rel="noreferrer">Manley Roberts</a><sup>1</sup>,
                                     </span>
                                     <span class="author-block">
-                                        <a href="" target="_blank" rel="noreferrer">Arka Pal</a><sup>1</sup>,
+                                        <a href="." target="_blank" rel="noreferrer">Arka Pal</a><sup>1</sup>,
                                     </span>
                                     <span class="author-block">
-                                        <a href="" target="_blank" rel="noreferrer">Ben Feuer</a><sup>2</sup>,
+                                        <a href="." target="_blank" rel="noreferrer">Ben Feuer</a><sup>2</sup>,
                                     </span>
                                     <span class="author-block">
                                         <a href="https://tmfs10.github.io/" target="_blank" rel="noreferrer">Siddhartha Jain</a><sup>3</sup>,
@@ -44,7 +45,7 @@ function App() {
                                     </span>
                                     <br></br>
                                     <span class="author-block">
-                                        <a href="" target="_blank" rel="noreferrer">Siddartha Naidu</a><sup>1</sup>,
+                                        <a href="." target="_blank" rel="noreferrer">Siddartha Naidu</a><sup>1</sup>,
                                     </span>
                                     <span class="author-block">
                                         <a href="https://chinmayhegde.github.io">Chinmay Hegde</a><sup>2</sup>,
@@ -79,14 +80,14 @@ function App() {
                                             <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
-                                                    <i class="fab fa-images"></i>
+                                                    <i class="fa-solid fa-medal"></i>
                                                 </span>
                                                 <span>Leaderboard</span>
                                             </a>
                                             <a href="./blog"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
-                                                    <i class="ai ai-arxiv"></i>
+                                                    <i class="fa-regular fa-newspaper"></i>
                                                 </span>
                                                 <span>Blog</span>
                                             </a>
@@ -95,7 +96,7 @@ function App() {
                                             <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
-                                                    <i class="fab fa-github"></i>
+                                                    <i class="fa-brands fa-github"></i>
                                                 </span>
                                                 <span>Code</span>
                                             </a>
@@ -104,7 +105,7 @@ function App() {
                                             <a href="./"
                                                 class="external-link button is-normal is-rounded is-dark">
                                                 <span class="icon">
-                                                    <i class="far fa-images"></i>
+                                                    <i class="fa-solid fa-database"></i>
                                                 </span>
                                                 <span>Data</span>
                                             </a>
@@ -158,10 +159,10 @@ function App() {
                 <div class="container">
                     <div class="content has-text-centered">
                     <a class="icon-link"
-                        href="./static/videos/nerfies_paper.pdf">
+                        href=".">
                         <i class="fas fa-file-pdf"></i>
                     </a>
-                    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <a class="icon-link" href="." disabled>
                         <i class="fab fa-github"></i>
                     </a>
                     </div>
