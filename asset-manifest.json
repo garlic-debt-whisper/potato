@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/potato/static/css/main.102cd74f.css",
-    "main.js": "/potato/static/js/main.a6145e2b.js",
+    "main.js": "/potato/static/js/main.ce5ac005.js",
     "static/js/453.a3f7b698.chunk.js": "/potato/static/js/453.a3f7b698.chunk.js",
     "static/media/fa-solid-900.ttf": "/potato/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/fa-brands-400.ttf": "/potato/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/potato/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/potato/index.html",
     "main.102cd74f.css.map": "/potato/static/css/main.102cd74f.css.map",
-    "main.a6145e2b.js.map": "/potato/static/js/main.a6145e2b.js.map",
+    "main.ce5ac005.js.map": "/potato/static/js/main.ce5ac005.js.map",
     "453.a3f7b698.chunk.js.map": "/potato/static/js/453.a3f7b698.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.102cd74f.css",
-    "static/js/main.a6145e2b.js"
+    "static/js/main.ce5ac005.js"
   ]
 }
