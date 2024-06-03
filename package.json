@@ -1,5 +1,6 @@
 {
   "name": "potato",
+  "homepage": "https://garlic-debt-whisper.github.io/potato/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
