@@ -111,7 +111,7 @@ const CSVTable = () => {
 
     
     const handleSortingChange = (accessor) => {
-        const sortOrder = accessor === sortField && order === "asc" ? "desc" : "asc";
+        const sortOrder = accessor === sortField && order === "desc" ? "asc" : "desc";
         setSortField(accessor);
         setOrder(sortOrder);
         handleSorting(accessor, sortOrder);
